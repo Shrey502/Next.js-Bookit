@@ -3,8 +3,8 @@ BookIt: Experiences & Slots
 BookIt is a full-stack web application that allows users to browse, select, and book travel experiences. It's built with a React/Next.js frontend and a Node.js/Express backend with MongoDB, demonstrating a complete end-to-end booking workflow.
 
 Live Demo Links
-    Frontend (Vercel): [Link to your hosted Vercel project]
-    Backend API (Render): [Link to your hosted Render API]
+    Frontend (Vercel): https://next-js-bookit.vercel.app
+    Backend API (Render): https://next-js-bookit.onrender.com
 
 ========================================
 TECH STACK
