@@ -30,7 +30,7 @@ Prerequisites
 
 1. Clone the Repository
 
-    git clone https://github.com/[YourUsername]/bookit-project.git
+    git clone https://github.com/Shrey502/Next.js-Bookit
     cd bookit-project
 
 2. Backend Setup (server)
@@ -48,7 +48,7 @@ Prerequisites
 
        -- server/.env --
        # Get this string from your MongoDB Atlas dashboard
-       MONGO_URI="mongodb+srv://your_user:<your_password>@cluster0.abcde.mongodb.net/yourDatabaseName"
+       MONGO_URI="mongodb+srv://<your_username>:<your_password>@<your_cluster_url>/<your_db_name>"
        
        # Port for the backend
        PORT=5001
@@ -130,3 +130,17 @@ The backend provides the following API routes, all prefixed with /api.
     Method:   POST
     Endpoint: /bookings
     Desc:     Creates a new booking.
+
+========================================
+FEATURES
+========================================
+
+    - View and browse a grid of all available experiences.
+    - Live search/filter experiences by name, location, or description.
+    - View a detailed page for each experience.
+    - Select a date and time from dynamically-loaded, real-time slots.
+    - "Sold Out" and "X Left" states prevent double-booking.
+    - Apply a promo code (e.g., SAVE10) for a percentage or fixed discount.
+    - Complete a full checkout with user information.
+    - View a final booking confirmation page with a unique reference ID.
+    - Fully responsive design for desktop and mobile.
