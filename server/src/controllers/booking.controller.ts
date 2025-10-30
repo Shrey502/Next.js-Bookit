@@ -51,7 +51,7 @@ export const createBooking = async (req: Request, res: Response) => {
     // Count existing bookings for this specific slot
     const existingBookings = await Booking.find({ slotId: slotId });
     const bookedCapacity = existingBookings.reduce(
-      (total, b) => total + b.quantity,
+      (total:number, b:any) => total + b.quantity,
       0
     );
 

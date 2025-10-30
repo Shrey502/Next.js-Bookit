@@ -40,13 +40,13 @@ export const getExperienceById = async (req: Request, res: Response) => {
 
     // 3. NEW: Calculate remaining capacity for each slot
     const slotsWithAvailability = await Promise.all(
-      slots.map(async (slot) => {
+      slots.map(async (slot:any) => {
         // Find all bookings for this specific slot
         const existingBookings = await Booking.find({ slotId: slot._id });
         
         // Sum the 'quantity' from all bookings for this slot
         const bookedCapacity = existingBookings.reduce(
-          (total, b) => total + b.quantity,
+          (total:number, b:any) => total + b.quantity,
           0
         );
 
