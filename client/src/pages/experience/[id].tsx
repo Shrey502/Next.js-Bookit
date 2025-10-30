@@ -279,7 +279,7 @@ interface IParams extends ParsedUrlQuery {
 // 1. getStaticPaths: Tell Next.js which pages to pre-render
 export const getStaticPaths: GetStaticPaths = async () => {
   // Fetch all experience IDs from the backend
-  const res = await axios.get('${process.env.NEXT_PUBLIC_API_BASE_URL}/api/experiences');
+  const res = await axios.get(`${process.env.NEXT_PUBLIC_API_BASE_URL}/api/experiences`);
   const experiences: IExperience[] = res.data;
 
   // Create an array of 'paths' from the IDs

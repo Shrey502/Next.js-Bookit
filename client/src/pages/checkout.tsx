@@ -75,7 +75,7 @@ const CheckoutPage: NextPage = () => {
 
     try {
       const res = await axios.post(
-        '${process.env.NEXT_PUBLIC_API_BASE_URL}/api/promo/validate',
+        `${process.env.NEXT_PUBLIC_API_BASE_URL}/api/promo/validate`,
         { code: promoCode }
       );
 
@@ -120,7 +120,7 @@ const CheckoutPage: NextPage = () => {
 
     try {
       const response = await axios.post(
-        '${process.env.NEXT_PUBLIC_API_BASE_URL}/api/bookings',
+        `${process.env.NEXT_PUBLIC_API_BASE_URL}/api/bookings`,
         {
           experienceId: booking.experience?._id,
           slotId: booking.slot._id,
