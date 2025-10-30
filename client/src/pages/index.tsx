@@ -61,7 +61,7 @@ const Home: NextPage<HomeProps> = ({ experiences }) => {
 export const getStaticProps: GetStaticProps = async (context) => {
   try {
     // Call our backend API to get the experiences
-    const res = await axios.get('http://localhost:5001/api/experiences');
+    const res = await axios.get('${process.env.NEXT_PUBLIC_API_BASE_URL}/api/experiences');
     const experiences: IExperience[] = res.data;
 
     // This is the required return object
