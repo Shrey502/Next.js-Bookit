@@ -144,3 +144,5 @@ FEATURES
     - Complete a full checkout with user information.
     - View a final booking confirmation page with a unique reference ID.
     - Fully responsive design for desktop and mobile.
+    -And will try to make more beutiful
+    
